@@ -83,11 +83,10 @@ Open the local URL printed by Streamlit in your browser.
 
 ## AI-use disclosure
 
-AI tools helped with implementation planning, code drafting, and
-reviewing potential edge cases. I ran the pipeline and inspected its
-outputs in Google Colab. I reviewed the data model, retry behavior,
-rerun handling, and metric definitions. The final implementation and
-its limitations are documented here.
+## AI-use disclosure
 
-Before submission, update this section to accurately describe the AI
-assistance you used and the checks you personally completed.
+I used ChatGPT to help plan the pipeline architecture, draft implementation code, and identify potential edge cases in API ingestion, rate-limit handling, data modeling, and rerun behavior.
+
+I ran the ingestion and transformation pipeline in Google Colab and verified that it processed 300 repositories and created the SQLite database. I also confirmed that the Streamlit server started successfully. Full browser rendering and fresh-environment reproducibility should be verified separately.
+
+I reviewed the implementation and documented the main limitations, including bounded pagination, on-demand execution, and the use of SQLite instead of a production database.
