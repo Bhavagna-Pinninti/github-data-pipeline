@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+.venv/
+.env
+github_pipeline.db
+.ipynb_checkpoints/
