@@ -81,12 +81,11 @@ Open the local URL printed by Streamlit in your browser.
 - The project does not implement continuous scheduling or a
   production-grade incremental ingestion framework.
 
-## AI-use disclosure
 
 ## AI-use disclosure
 
 I used ChatGPT to help plan the pipeline architecture, draft implementation code, and identify potential edge cases in API ingestion, rate-limit handling, data modeling, and rerun behavior.
 
-I ran the ingestion and transformation pipeline in Google Colab and verified that it processed 300 repositories and created the SQLite database. I also confirmed that the Streamlit server started successfully. Full browser rendering and fresh-environment reproducibility should be verified separately.
+I ran the ingestion and transformation pipeline in Google Colab. It processed 300 repositories and created the SQLite database. I also started the Streamlit server and verified that the top-repositories chart and repository details table rendered. The language chart and fresh-environment reproducibility should be verified separately.
 
 I reviewed the implementation and documented the main limitations, including bounded pagination, on-demand execution, and the use of SQLite instead of a production database.
